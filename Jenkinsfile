@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh "/var/jenkins_home/workspace/PES1UG20CS187/main/hello_exec"
+                sh "/var/jenkins_home/workspace/PES1UG20CS187"
                 echo 'Testing stage completed'
             }
         }
     }
-}}
+
     post {
             failure {
                 echo 'Pipeline Failed'
